@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Dona's Diamond Price Prediction Service</title>
+</head>
+
+
+<body bgcolor=#FAFAD2>
+
+    <center>
+        <br><br>
+        <div>
+            <img src="{{ url_for('static', filename='image/crow.png') }}"/>
+        </div>
+        <h2> If you give me brief information about your Diamonds, I'll predict the price !! ✨ </h2>
+
+    <form method="POST", action="{{url_for('predict')}}">
+        <b>
+        shape :
+        <select name="shape">
+            <option value="0" selected="selected">Asscher</option>
+            <option value="1">Cushion</option>
+            <option value="2">Emerald</option>
+            <option value="3">Heart</option>
+            <option value="4">Marquise</option>
+            <option value="5">Oval</option>
+            <option value="6">Pear</option>
+            <option value="7">Princess</option>
+            <option value="8">Radiant</option>
+            <option value="9">Round</option>
+        </select><br><br>
+        carat : <input type="number", step=0.01, name="carat", placeholder="정수를 입력해주세요!☻"> <br><br>
+        cut :
+        <select name="cut">
+            <option value="0" selected="selected">Fair</option>
+            <option value="1">Good</option>
+            <option value="2">Ideal</option>
+            <option value="3">Super Ideal</option>
+            <option value="4">Very Good</option>
+        </select><br><br>
+        color :
+        <select name="color">
+            <option value="0" selected="selected">0(Absolutely colorless✨)</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6(Near-colorless)</option>
+        </select><br><br>
+        clarity :
+        <select name="clarity">
+            <option value="0" selected="selected">0(no flaws✨)</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7(Slightly included inclusions)</option>
+        </select><br><br>
+        report :
+                <select name="report">
+                    <option value="0" selected="selected">GCAL</option>
+                    <option value="1">GIA</option>
+                    <option value="2">HRD</option>
+                    <option value="3">IGI</option>
+                </select><br><br>
+        type :
+            <select name="type">
+                <option value="0" selected="selected">lab</option>
+                <option value="1">natural</option>
+            </select><br><br>
+        </b>
+            <input type="submit" name="제출">
+    </form>
+
+
+
+    </center>
+
+</body>
+</html>
