@@ -1,8 +1,10 @@
 # Diamond-project💎
 #### 🏠 **my web application** : http://3.38.150.104:5000/    
 If you give me brief information about your Diamonds, I'll predict the price !! ✨   
-
+![result](https://user-images.githubusercontent.com/89832134/145787450-8581649b-d572-4532-be3f-d302ebf843a7.png)
 ___
+### PipLine
+![donas_diamond_pipline](https://user-images.githubusercontent.com/89832134/145787167-25384672-13c1-4f97-9b1b-1d1cfa60a22c.jpg)
 ### About Data🥕
 * **price** : US Dollar Price ($) | 미국 달러 가격($)
 * **shape** : geometric shape of a diamond | 다이아몬드의 기하학적 외형
